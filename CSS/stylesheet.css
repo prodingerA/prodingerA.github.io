@@ -71,7 +71,12 @@ footer .copyright {
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
     background-color: #24355C;
+    
   }
+  body {
+    transform: scale(2.0); 
+  }
+
 }
 @media (min-width: 800px) and (max-width: 850px) {
   .navbar:not(.top-nav-collapse) {
