@@ -1,82 +1,90 @@
 *{
-  margin: 0;
-  padding: 0;
-}
-.fakeimg {
-  height: 200px;
-  background: #aaa;
- 
+    margin: 0;
+    padding: 0;
 }
 
-html,
-body,
-header,
-#intro {
-    height: 100%;
-}
 
-#intro {
-    background: url("../IMG/home.jpg")no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+  html,
+  body,
+  header,
+  #intro {
+      height: 100%;
+  }
+  
+  #intro {
+      background: url("IMG/home.jpg")no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
 
 #about_sectionbreak.img-fluid {
-  background-attachment: fixed;
-  padding-top: 80px;
-  padding-bottom: 80px;
+    background-attachment: fixed;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 /*Footer*/
 
 footer {
-  background: #222;
-  color: #aaa;
-  padding-top: 10px;
-}
-
-footer a {
-  color: #aaa;
-}
-
-footer a:hover {
-  color: #fff;
-}
-
-
-footer .three-column {
- overflow: hidden;
-}
-
-footer .three-column li{
- width: 33.3333%;
-  float: left;
-  padding: 5px 0;
-}
-
-
-footer .copyright {
-  padding: 15px 0;
-  background: #333;
-  margin-top: 20px;
-  font-size: 15px;
-}
-
-/*viewport*/
-.top-nav-collapse {
-  background-color: #24355C;
-}
-@media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-    background-color: #24355C;
-    
+    background: #222;
+    color: #aaa;
+    padding-top: 10px;
+  }
+  
+  footer a {
+    color: #aaa;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }
+  
+  
+  footer .three-column {
+   overflow: hidden;
+  }
+  
+  footer .three-column li{
+   width: 33.3333%;
+    float: left;
+    padding: 5px 0;
   }
 
-}
-@media (min-width: 800px) and (max-width: 850px) {
-  .navbar:not(.top-nav-collapse) {
+  
+  footer .copyright {
+    padding: 15px 0;
+    background: #333;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  
+  /*viewport*/
+  .top-nav-collapse {
     background-color: #24355C;
   }
-}
+  @media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #24355C;
+    }
+  }
+  @media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+      background-color: #24355C;
+    }
+  }
+
+  .box::after {
+    width: 120%;
+    height: 200px;
+    left: -10%;
+    background-color: white;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    content: "";
+    position: absolute;
+    bottom: -100px;
+  }
+  
