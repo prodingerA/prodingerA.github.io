@@ -2,14 +2,13 @@ $(document).ready(function(){
     $(".animated").addClass("delay-1s");
     $('input[type="checkbox"]').click(function(){
         if($(this).is(":checked")){
-            $("spacer").css("background-color", "yellow");
+            $("#canvas-wrapper").css("background", "#222");
         }
         else if($(this).is(":not(:checked)")){
          
         }
     });
-});
-
+    
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -66,3 +65,5 @@ window.onload = function() {
     document.body.appendChild(css);
 
 };
+
+});
