@@ -17,6 +17,7 @@ $(document).ready(function () {
             $('#about_sectionbreak').addClass('about_sectionbreak-dark');
             $('.btn-danger').addClass('btn-success');
             $('.card').addClass('card-dark');
+            $('.fa-bars').addClass('white-text');
         }
         else if ($(this).is(":not(:checked)")) {
             $('.bg-light').removeClass('bg-light-dark');
@@ -34,6 +35,7 @@ $(document).ready(function () {
             $('.btn-danger').removeClass('btn-success');
             $('.card').removeClass('card-dark');
             $('.alert').addClass('alert-info');
+            $('.fa-bars').removeClass('white-text');
         }
     });
 
