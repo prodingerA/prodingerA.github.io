@@ -90,4 +90,8 @@
         background-color: #121212 !important;
         transition: 0.7s ease;
     }
+
+    .newtest{
+        background-attachment: fixed;
+    }
 }
