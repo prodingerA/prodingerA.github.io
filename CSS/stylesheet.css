@@ -32,6 +32,16 @@ header,
     -o-background-size     : cover;
     background-size        : cover;
 }
+#skills_sectionbreak.img-fluid {
+    background-attachment  : fixed;
+    padding-top            : 80px;
+    padding-bottom         : 80px;
+    background             : url('../IMG/light/skills.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size   : cover;
+    -o-background-size     : cover;
+    background-size        : cover;
+}
 
 /*Footer*/
 
@@ -96,6 +106,27 @@ footer .copyright {
     content          : "";
     position         : absolute;
     bottom           : -100px;
+}
+
+.otherbox::after{
+    width            : 120% !important;
+    height           : 200px !important;
+    left             : -10% !important;
+    background-color : red;
+    -webkit-transform: rotate(+5deg);
+    -ms-transform    : rotate(+5deg);
+    transform        : rotate(+5deg);
+    content          : "";
+    position         : absolute;
+    bottom           : -100px;
+}
+
+#contactbutton:active {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
+     outline: none;
 }
 
 
