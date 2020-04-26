@@ -16,15 +16,6 @@
       color: #FFFFFF !important;
   }
 
-  .bg-dark-dark {
-    background-color: #121212 !important;
-  }
-  .navbar-dark-dark {
-    background-color: #121212 !important;
-  }
-  .border-dark-dark {
-    background-color: #121212 !important;
-  }
 
   .intro-dark {
     background: url('../IMG/dark/landing.jpg')no-repeat center center fixed !important;
@@ -66,3 +57,23 @@
 .needto {
 
 }
+
+.span-dark{
+    color: white !important;
+    
+}
+
+.navbar-light {
+    color: white !important;
+}
+.bg-light {
+    background-color: white !important;
+}
+
+.navbar-light-dark {
+    color: #121212 !important;
+}
+.bg-light-dark {
+    background-color: #121212 !important;
+}
+

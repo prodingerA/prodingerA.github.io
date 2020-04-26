@@ -2,8 +2,8 @@ $(document).ready(function(){
     $(".animated").addClass("delay-1s");
     $('input[type="checkbox"]').click(function(){
         if($(this).is(":checked")){
-            $('.bg-white').addClass('bg-dark-dark');
-            $('.navbar-white').addClass('navbar-dark-dark');
+            $('.bg-light').addClass('bg-light-dark');
+            $('.navbar-light').addClass('navbar-light-dark');
             $('.box').addClass('box-dark');
             $('.white-text').addClass('text-dark-dark');
             $('.black-text').addClass('text-dark-dark');
@@ -17,12 +17,13 @@ $(document).ready(function(){
             $('#about_sectionbreak').addClass('about_sectionbreak-dark');
             $('.btn-danger').addClass('btn-success');
             $('.card').addClass('card-dark');
+            $('span').addClass('span-dark');
            
             
         }
         else if($(this).is(":not(:checked)")){
-            $('.bg-white').removeClass('bg-dark-dark');
-            $('.navbar-white').removeClass('navbar-dark-dark');
+            $('.bg-light').removeClass('bbg-light-dark');
+            $('.navbar-light').removeClass('navbar-light-dark');
             $('.box').removeClass('box-dark');
             $('.white-text').removeClass('text-dark-dark');
             $('.black-text').removeClass('text-dark-dark');
