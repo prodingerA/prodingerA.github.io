@@ -1,79 +1,93 @@
-.box-dark::after {
-    width            : 120%;
-    height           : 200px;
-    left             : -10%;
-    background-color : #121212;
-    -webkit-transform: rotate(-5deg);
-    -ms-transform    : rotate(-5deg);
-    transform        : rotate(-5deg);
-    content          : "";
-    position         : absolute;
-    bottom           : -100px;
-}
+@media (prefers-color-scheme: dark) {
 
-.text-dark-dark {
-    color: #FFFFFF !important;
-}
+    .box-dark::after {
+        width            : 120%;
+        height           : 200px;
+        left             : -10%;
+        background-color : #121212;
+        -webkit-transform: rotate(-5deg);
+        -ms-transform    : rotate(-5deg);
+        transform        : rotate(-5deg);
+        content          : "";
+        position         : absolute;
+        bottom           : -100px;
+        transition: 0.7s ease;
+    }
+
+    .text-dark-dark {
+        color: #FFFFFF !important;
+        transition: 0.7s ease;
+    }
 
 
-.intro-dark {
-    background             : url('../IMG/dark/landing.jpg')no-repeat center center fixed !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size   : cover !important;
-    -o-background-size     : cover !important;
-    background-size        : cover !important;
-}
+    .intro-dark {
+        background             : url('../IMG/dark/landing.jpg')no-repeat center center fixed !important;
+        -webkit-background-size: cover !important;
+        -moz-background-size   : cover !important;
+        -o-background-size     : cover !important;
+        background-size        : cover !important;
+        transition: 0.7s ease;
+    }
 
-.dark-dark {
-    background-color: #121212;
-    color           : #121212 !important;
-}
+    .dark-dark {
+        background-color: #121212;
+        color           : #121212 !important;
+        transition: 0.7s ease;
+    }
 
-.cont-dark {
-    background-color: #1f1e1e !important;
-    border-radius   : 1em !important;
-}
+    .cont-dark {
+        background-color: #1f1e1e !important;
+        border-radius   : 1em !important;
+        transition: 0.7s ease;
+    }
 
-.perm {
-    color: #155724 !important;
-}
+    .perm {
+        color: #155724 !important;
+        transition: 0.7s ease;
+    }
 
-.about_sectionbreak-dark {
-    background-attachment  : fixed !important;
-    padding-top            : 80px !important;
-    padding-bottom         : 80px !important;
-    background             : url('../IMG/dark/mask1.jpg')no-repeat center center fixed !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size   : cover !important;
-    -o-background-size     : cover !important;
-    background-size        : cover !important;
-}
+    .about_sectionbreak-dark {
+        background-attachment  : fixed !important;
+        padding-top            : 80px !important;
+        padding-bottom         : 80px !important;
+        background             : url('../IMG/dark/mask1.jpg')no-repeat center center fixed !important;
+        -webkit-background-size: cover !important;
+        -moz-background-size   : cover !important;
+        -o-background-size     : cover !important;
+        background-size        : cover !important;
+        transition: 0.7s ease;
+    }
 
-.card-dark {
-    background-color: #1f1e1e !important;
+    .card-dark {
+        background-color: #1f1e1e !important;
+        transition: 0.7s ease;
 
-}
+    }
 
-.needto {}
+    .needto {}
 
-.navbar-icon-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-     !important;
+    .navbar-icon-dark .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+        transition: 0.7s ease;
+    }
 
-}
+    .navbar-light {
+        color: white !important;
+        transition: 0.7s ease;
+    }
 
-.navbar-light {
-    color: white !important;
-}
+    .bg-light {
+        background-color: white !important;
+        transition: 0.7s ease;
+    }
 
-.bg-light {
-    background-color: white !important;
-}
+    .navbar-light-dark {
+        color: #121212 !important;
+        transition: 0.7s ease;
+    }
 
-.navbar-light-dark {
-    color: #121212 !important;
-}
-
-.bg-light-dark {
-    background-color: #121212 !important;
+    .bg-light-dark {
+        background-color: #121212 !important;
+        transition: 0.7s ease;
+    }
 }
