@@ -17,12 +17,12 @@ $(document).ready(function(){
             $('#about_sectionbreak').addClass('about_sectionbreak-dark');
             $('.btn-danger').addClass('btn-success');
             $('.card').addClass('card-dark');
-            $('span').addClass('span-dark');
-           
+          
+            
             
         }
         else if($(this).is(":not(:checked)")){
-            $('.bg-light').removeClass('bbg-light-dark');
+            $('.bg-light').removeClass('bg-light-dark');
             $('.navbar-light').removeClass('navbar-light-dark');
             $('.box').removeClass('box-dark');
             $('.white-text').removeClass('text-dark-dark');
@@ -37,6 +37,7 @@ $(document).ready(function(){
             $('.btn-danger').removeClass('btn-success');
             $('.card').removeClass('card-dark');
             $('.alert').addClass('alert-info');
+           
         }
     });
     
