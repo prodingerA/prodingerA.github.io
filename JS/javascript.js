@@ -18,6 +18,7 @@ $(document).ready(function () {
             $('.btn-danger').addClass('btn-success');
             $('.card').addClass('card-dark');
             $('.fa-bars').addClass('white-text');
+            $('#skills_sectionbreak').addClass('skills_sectionbreak-dark');
         }
         else if ($(this).is(":not(:checked)")) {
             $('.bg-light').removeClass('bg-light-dark');
@@ -36,6 +37,7 @@ $(document).ready(function () {
             $('.card').removeClass('card-dark');
             $('.alert').addClass('alert-info');
             $('.fa-bars').removeClass('white-text');
+            $('#skills_sectionbreak').removeClass('skills_sectionbreak-dark');
         }
     });
 
