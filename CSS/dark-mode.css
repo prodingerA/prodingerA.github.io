@@ -1,0 +1,68 @@
+
+  .box-dark::after {
+    width: 120%;
+    height: 200px;
+    left: -10%;
+    background-color: #121212;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    content: "";
+    position: absolute;
+    bottom: -100px;
+  }
+
+  .text-dark-dark{
+      color: #FFFFFF !important;
+  }
+
+  .bg-dark-dark {
+    background-color: #121212 !important;
+  }
+  .navbar-dark-dark {
+    background-color: #121212 !important;
+  }
+  .border-dark-dark {
+    background-color: #121212 !important;
+  }
+
+  .intro-dark {
+    background: url('../IMG/dark/landing.jpg')no-repeat center center fixed !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+  }
+
+  .dark-dark{
+      background-color: #121212;
+      color: #121212 !important;
+  }
+
+  .cont-dark {
+   background-color: #1f1e1e !important;
+   border-radius: 1em !important;
+  }
+
+  .perm {
+    color: #155724 !important;
+  }
+
+  .about_sectionbreak-dark {
+    background-attachment: fixed !important;
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+    background: url('../IMG/dark/mask1.jpg')no-repeat center center fixed !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+}
+
+.card-dark {
+    background-color: #1f1e1e !important;
+    
+}
+.needto {
+
+}

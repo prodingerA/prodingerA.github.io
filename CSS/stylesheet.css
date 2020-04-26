@@ -23,6 +23,11 @@
     background-attachment: fixed;
     padding-top: 80px;
     padding-bottom: 80px;
+    background: url('../IMG/about.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /*Footer*/
@@ -88,6 +93,8 @@ footer {
     bottom: -100px;
   }
 
+ 
+
   .theme-switch-wrapper {
     display: flex;
     align-items: center;
@@ -131,7 +138,7 @@ footer {
   }
   
   input:checked + .slider {
-    background-color: #66bb6a;
+    background-color: #00c851;
   }
   
   input:checked + .slider:before {
