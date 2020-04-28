@@ -57,9 +57,7 @@ $(document).ready(function () {
         $('#checkbox').prop('checked', true);
         enableDarkMode();
     }
-    $('.acceptcookies').on('click', function (){
-        $('#cookiealert').css('visibility', 'hidden');
-    });
+
 
     $('.navbar-nav a').on('click', function () {
         $('.navbar-toggler').click();
