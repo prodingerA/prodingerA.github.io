@@ -46,23 +46,26 @@ $(document).ready(function () {
     $('#checkbox').click(function () {
         if ($(this).is(':checked')) {
             enableDarkMode();
-            Cookies.set('darkmode', 'true', { expires: 6969, path: '' });
+            Cookies.set('darkmode', 'true', {
+                expires: 6969,
+                path: ''
+            });
         } else {
             disableDarkMode();
-            Cookies.set('darkmode', 'false', { expires: -1, path: '' })
+            Cookies.set('darkmode', 'false', {
+                expires: -1,
+                path: ''
+            })
         }
     });
     var a = Cookies.get('darkmode');
-
 
     if (a) {
         $('#checkbox').prop('checked', true);
         enableDarkMode();
     }
 
-
     $('.navbar-nav a').on('click', function () {
         $('.navbar-toggler').click();
     });
-
 });

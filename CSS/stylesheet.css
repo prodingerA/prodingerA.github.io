@@ -1,9 +1,10 @@
 * {
-    margin : 0;
+    margin: 0;
     padding: 0;
     scroll-behavior: smooth;
 }
-/* Start Loading Page *//
+
+/* Start Loading Page */
 #loader {
     position: absolute;
     left: 50%;
@@ -19,39 +20,65 @@
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-  }
-  
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  .animate-bottom {
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-bottom {
     position: relative;
     -webkit-animation-name: animatebottom;
     -webkit-animation-duration: 1s;
     animation-name: animatebottom;
     animation-duration: 1s
-  }
-  
-  @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
-    to { bottom:0px; opacity:1 }
-  }
-  
-  @keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
-    to{ bottom:0; opacity:1 }
-  }
-  
-  #myDiv {
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+#myDiv {
     display: none;
     text-align: center;
-  }
+}
+
 /* End Loading Page*/
 
 html,
@@ -62,11 +89,11 @@ header,
 }
 
 #intro {
-    background             : url('../IMG/light/home.jpg')no-repeat center center fixed;
+    background: url('../IMG/light/home.jpg')no-repeat center center fixed;
     -webkit-background-size: cover;
-    -moz-background-size   : cover;
-    -o-background-size     : cover;
-    background-size        : cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #summary p {
@@ -74,43 +101,46 @@ header,
 }
 
 #about_sectionbreak.img-fluid {
-    background-attachment  : fixed;
-    padding-top            : 80px;
-    padding-bottom         : 80px;
-    background             : url('../IMG/light/about.jpg')no-repeat center center fixed;
+    background-attachment: fixed;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: url('../IMG/light/about.jpg')no-repeat center center fixed;
     -webkit-background-size: cover;
-    -moz-background-size   : cover;
-    -o-background-size     : cover;
-    background-size        : cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+
 #skills_sectionbreak.img-fluid {
-    background-attachment  : fixed;
-    padding-top            : 80px;
-    padding-bottom         : 80px;
-    background             : url('../IMG/light/skills.jpg')no-repeat center center fixed;
+    background-attachment: fixed;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: url('../IMG/light/skills.jpg')no-repeat center center fixed;
     -webkit-background-size: cover;
-    -moz-background-size   : cover;
-    -o-background-size     : cover;
-    background-size        : cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #contact_jump::before {
     content: "";
-    display: block; 
-    height: 35px; 
-    margin: -35px 0 0;  
+    display: block;
+    height: 35px;
+    margin: -35px 0 0;
 }
+
 #summary::before {
     content: "";
-    display: block; 
-    height: 50px; 
-    margin: -50px 0 0;  
+    display: block;
+    height: 50px;
+    margin: -50px 0 0;
 }
+
 /*Footer*/
 
 footer {
-    background : #222;
-    color      : #aaa;
+    background: #222;
+    color: #aaa;
     padding-top: 10px;
 }
 
@@ -128,17 +158,17 @@ footer .three-column {
 }
 
 footer .three-column li {
-    width  : 33.3333%;
-    float  : left;
+    width: 33.3333%;
+    float: left;
     padding: 5px 0;
 }
 
 
 footer .copyright {
-    padding   : 15px 0;
+    padding: 15px 0;
     background: #333;
     margin-top: 20px;
-    font-size : 15px;
+    font-size: 15px;
 }
 
 /*viewport*/
@@ -159,56 +189,56 @@ footer .copyright {
 }
 
 .box::after {
-    width            : 120%;
-    height           : 200px;
-    left             : -10%;
-    background-color : white;
+    width: 120%;
+    height: 200px;
+    left: -10%;
+    background-color: white;
     -webkit-transform: rotate(-5deg);
-    -ms-transform    : rotate(-5deg);
-    transform        : rotate(-5deg);
-    content          : "";
-    position         : absolute;
-    bottom           : -100px;
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    content: "";
+    position: absolute;
+    bottom: -100px;
 }
 
-.otherbox::after{
-    width            : 120% !important;
-    height           : 200px !important;
-    left             : -10% !important;
-    background-color : red;
+.otherbox::after {
+    width: 120% !important;
+    height: 200px !important;
+    left: -10% !important;
+    background-color: red;
     -webkit-transform: rotate(+5deg);
-    -ms-transform    : rotate(+5deg);
-    transform        : rotate(+5deg);
-    content          : "";
-    position         : absolute;
-    bottom           : -100px;
+    -ms-transform: rotate(+5deg);
+    transform: rotate(+5deg);
+    content: "";
+    position: absolute;
+    bottom: -100px;
 }
 
 #contactbutton:active {
     background: #e5e5e5;
     -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
-       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
-            box-shadow: inset 0px 0px 5px #c1c1c1;
-     outline: none;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    outline: none;
 }
 
 
 
 .theme-switch-wrapper {
-    display    : flex;
+    display: flex;
     align-items: center;
 }
 
 em {
     margin-left: 10px;
-    font-size  : 1rem;
+    font-size: 1rem;
 }
 
 .theme-switch {
-    display : inline-block;
-    height  : 24px;
+    display: inline-block;
+    height: 24px;
     position: relative;
-    width   : 45px;
+    width: 45px;
 }
 
 .theme-switch input {
@@ -217,24 +247,24 @@ em {
 
 .slider {
     background-color: #ccc;
-    bottom          : 0;
-    cursor          : pointer;
-    left            : 0;
-    position        : absolute;
-    right           : 0;
-    top             : 0;
-    transition      : .4s;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
 }
 
 .slider:before {
     background-color: #fff;
-    bottom          : 4px;
-    content         : "";
-    height          : 18px;
-    left            : 4px;
-    position        : absolute;
-    transition      : .4s;
-    width           : 18px;
+    bottom: 4px;
+    content: "";
+    height: 18px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 18px;
 }
 
 input:checked+.slider {
@@ -255,10 +285,9 @@ input:checked+.slider:before {
 
 #cookiealert {
     background-color: white;
-    position: fixed; 
-    bottom: 0; 
+    position: fixed;
+    bottom: 0;
     z-index: 1;
     width: 100%;
-  
-}
 
+}

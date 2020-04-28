@@ -1,18 +1,16 @@
 $(document).ready(function () {
 
     var a = Cookies.get('acceptcookies');
-    if(a){
+    if (a) {
         $('#cookiealert').css('visibility', 'hidden');
-    }
-    else {
+    } else {
         $('#cookiealert').css('visibility', 'visible');
-        $('.acceptcookies').on('click', function (){
+        $('.acceptcookies').on('click', function () {
             $('#cookiealert').css('visibility', 'hidden');
-            Cookies.set('acceptcookies', 'true', { expires: 6969, path: '' })
+            Cookies.set('acceptcookies', 'true', {
+                expires: 6969,
+                path: ''
+            })
         });
     }
-   
-
-    
 });
-
