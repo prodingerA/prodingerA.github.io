@@ -41,9 +41,6 @@ function disableDarkMode() {
     $('#cookiealert').removeClass('cookiealert-dark');
     $('.btn-primary').removeClass('btn-primary-dark');
 }
-$('.acceptcookies').on('click', function (){
-    $('#cookiealert').css('visibility', 'hidden');
-});
 
 $(document).ready(function () {
     $('#checkbox').click(function () {
@@ -54,6 +51,10 @@ $(document).ready(function () {
             disableDarkMode();
             document.cookie = 'darkmode =;Expires=Thu, 01 Jan 1970 00:00:00 GMT';
         }
+    });
+    
+    $('.acceptcookies').on('click', function (){
+        $('#cookiealert').css('visibility', 'hidden');
     });
 
     $('.navbar-nav a').on('click', function () {
