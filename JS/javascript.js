@@ -1,7 +1,17 @@
+var DMenabled = Cookies.get('darkmode');
+if(DMenabled){
+    enableDarkMode();
+}
+else {
+    disableDarkMode();
+}
+
 $(document).ready(function () {
-    $(".animated").addClass("delay-1s");
     $('input[type="checkbox"]').click(function () {
         if ($(this).is(":checked")) {
+           document.cookie = "darkModeCookie";
+            enableDarkMode();
+            function enableDarkMode(){
             $('.bg-light').addClass('bg-light-dark');
             $('.navbar-light').addClass('navbar-light-dark');
             $('.box').addClass('box-dark');
@@ -20,8 +30,16 @@ $(document).ready(function () {
             $('.fa-bars').addClass('white-text');
             $('#skills_sectionbreak').addClass('skills_sectionbreak-dark');
             $('.navbar-toggler').click();
+            }
         }
         else if ($(this).is(":not(:checked)")) {
+            if(Cookies.get('darkmode')){
+                Cookies.remove('darkmode');
+            }
+            else {
+                disableDarkMode();
+            }
+            function disableDarkMode(){
             $('.bg-light').removeClass('bg-light-dark');
             $('.navbar-light').removeClass('navbar-light-dark');
             $('.box').removeClass('box-dark');
@@ -39,8 +57,10 @@ $(document).ready(function () {
             $('.alert').addClass('alert-info');
             $('.fa-bars').removeClass('white-text');
             $('#skills_sectionbreak').removeClass('skills_sectionbreak-dark');
-            $('.navbar-toggler').click();
+            $('.navbar-toggler').click();  
+            }
         }
+
     });
 
     var TxtType = function (el, toRotate, period) {
@@ -105,3 +125,5 @@ $(document).ready(function () {
     });
    
 });
+
+
