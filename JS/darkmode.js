@@ -46,14 +46,16 @@ $(document).ready(function () {
     $('#checkbox').click(function () {
         if ($(this).is(':checked')) {
             enableDarkMode();
-            document.cookie = 'darkmode = true; Expires=Sun, 22 Oct 2069 08:00:00 GMT';
+            Cookies.set('darkmode', 'true', { expires: 6969, path: '' });
         } else {
             disableDarkMode();
-            document.cookie = 'darkmode =;Expires=Thu, 01 Jan 1970 00:00:00 GMT';
+            Cookies.set('darkmode', 'false', { expires: -1, path: '' })
         }
     });
+    var a = Cookies.get('darkmode');
 
-    if (document.cookie) {
+
+    if (a) {
         $('#checkbox').prop('checked', true);
         enableDarkMode();
     }
