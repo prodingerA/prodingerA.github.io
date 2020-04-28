@@ -202,3 +202,13 @@ input:checked+.slider:before {
 .slider.round:before {
     border-radius: 50%;
 }
+
+#cookiealert {
+    background-color: white;
+    position: fixed; 
+    bottom: 0; 
+    z-index: 1;
+    width: 100%;
+  
+}
+
