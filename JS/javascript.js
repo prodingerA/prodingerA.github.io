@@ -97,4 +97,8 @@ $(document).ready(function () {
         document.body.appendChild(css);
 
     };
+
+    $('.navbar-nav a').on('click' , function(){
+        $('.navbar-toggler').click();
+    });
 });
