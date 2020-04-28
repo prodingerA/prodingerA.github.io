@@ -44,6 +44,18 @@ header,
     background-size        : cover;
 }
 
+#contact_jump::before {
+    content: "";
+    display: block; 
+    height: 35px; 
+    margin: -35px 0 0;  
+}
+#summary::before {
+    content: "";
+    display: block; 
+    height: 50px; 
+    margin: -50px 0 0;  
+}
 /*Footer*/
 
 footer {
