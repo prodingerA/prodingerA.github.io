@@ -19,6 +19,7 @@ $(document).ready(function () {
             $('.card').addClass('card-dark');
             $('.fa-bars').addClass('white-text');
             $('#skills_sectionbreak').addClass('skills_sectionbreak-dark');
+            $('.navbar-toggler').click();
         }
         else if ($(this).is(":not(:checked)")) {
             $('.bg-light').removeClass('bg-light-dark');
@@ -38,6 +39,7 @@ $(document).ready(function () {
             $('.alert').addClass('alert-info');
             $('.fa-bars').removeClass('white-text');
             $('#skills_sectionbreak').removeClass('skills_sectionbreak-dark');
+            $('.navbar-toggler').click();
         }
     });
 
@@ -101,4 +103,5 @@ $(document).ready(function () {
     $('.navbar-nav a').on('click' , function(){
         $('.navbar-toggler').click();
     });
+   
 });
