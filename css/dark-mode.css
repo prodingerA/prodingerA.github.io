@@ -9,12 +9,11 @@
     content: "";
     position: absolute;
     bottom: -100px;
-    transition: 0.7s ease;
+    transition: 0.7s ease-in-out;
 }
 
 .text-dark-dark {
     color: #FFFFFF !important;
-    transition: 0.7s ease;
 }
 
 
@@ -24,24 +23,24 @@
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
     background-size: cover !important;
-    transition: 0.7s ease;
+    transition: 0.7s ease-in-out;
 }
 
 .dark-dark {
     background-color: #121212;
     color: #121212 !important;
-    transition: 0.7s ease;
+ 
 }
 
 .cont-dark {
     background-color: #1f1e1e !important;
     border-radius: 1em !important;
-    transition: 0.7s ease;
+    transition: 0.7s ease-in-out;
 }
 
 .perm {
     color: #155724 !important;
-    transition: 0.7s ease;
+    transition: 0.7s ease-in-out;
 }
 
 .about_sectionbreak-dark {
@@ -53,7 +52,7 @@
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
     background-size: cover !important;
-    transition: 0.7s ease;
+    transition: 0.7s ease-in-out;
 }
 
 .skills_sectionbreak-dark {
@@ -65,12 +64,12 @@
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
     background-size: cover !important;
-    transition: 0.7s ease;
+    transition: 0.7s ease-in-out;
 }
 
 .card-dark {
     background-color: #1f1e1e !important;
-    transition: 0.7s ease;
+    transition: 0.7s ease-in-out;
 
 }
 
@@ -78,27 +77,27 @@
 
 .navbar-icon-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
-    transition: 0.7s ease;
+    transition: 0.7s ease-in-out;
 }
 
 .navbar-light {
     color: white !important;
-    transition: 0.7s ease;
+    transition: 0.7s ease-in-out;
 }
 
 .bg-light {
     background-color: white !important;
-    transition: 0.7s ease;
+    transition: 0.7s ease-in-out;
 }
 
 .navbar-light-dark {
     color: #121212 !important;
-    transition: 0.7s ease;
+    transition: 0.7s ease-in-out;
 }
 
 .bg-light-dark {
     background-color: #121212 !important;
-    transition: 0.7s ease;
+    transition: 0.7s ease-in-out;
 }
 
 .newtest {
@@ -111,13 +110,13 @@
     bottom: 0 !important;
     z-index: 1 !important;
     width: 100% !important;
-    transition: 0.7s ease !important;
+    transition: 0.7s ease-in-out !important;
 
 }
 
 .btn-primary-dark {
     background-color: #00c851 !important;
-    transition: 0.7s ease;
+    transition: 0.7s ease-in-out;
 }
 
 .hamburger-span-dark {

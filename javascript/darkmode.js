@@ -1,3 +1,13 @@
+//################################################################
+//################################################################
+// I want a performance friendly solution for the darkmode, I tried it with prefer 
+// color sheme:dark, but I dont like this way. I dont know I cannot sympathize with that
+// but jQuery has to be gone! It is not very good for the website.
+// If somebody knows how I solve that problem please contact me via GitHub.com
+// https://github.com/prodingerA/
+//################################################################
+//################################################################
+
 function enableDarkMode() {
     $('.bg-light').addClass('bg-light-dark');
     $('.navbar-light').addClass('navbar-light-dark');

@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -94,22 +96,7 @@ footer .copyright {
     font-size: 15px;
 }
 
-/*viewport*/
-.top-nav-collapse {
-    background-color: #24355C;
-}
 
-@media (max-width: 768px) {
-    .navbar:not(.top-nav-collapse) {
-        background-color: #24355C;
-    }
-}
-
-@media (min-width: 800px) and (max-width: 850px) {
-    .navbar:not(.top-nav-collapse) {
-        background-color: #24355C;
-    }
-}
 
 .box::after {
     width: 120%;
@@ -177,6 +164,7 @@ em {
     right: 0;
     top: 0;
     transition: .4s;
+    transform: translateY(10%);
 }
 
 .slider:before {
