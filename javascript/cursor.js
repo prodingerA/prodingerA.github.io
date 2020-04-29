@@ -4,7 +4,7 @@ $(document).ready(function () {
     $('#hamburger').click(function(){
         $(this).toggleClass('open');
     });
-    
+
     var TxtType = function (el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
