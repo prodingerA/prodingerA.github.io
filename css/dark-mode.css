@@ -19,7 +19,7 @@
 
 
 .intro-dark {
-    background: url('../img/dark/landing.jpg')no-repeat center center fixed !important;
+    background: url('../images/dark/landing.jpg')no-repeat center center fixed !important;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
@@ -48,7 +48,7 @@
     background-attachment: fixed !important;
     padding-top: 80px !important;
     padding-bottom: 80px !important;
-    background: url('../img/dark/mask1.jpg')no-repeat center center fixed !important;
+    background: url('../images/dark/mask1.jpg')no-repeat center center fixed !important;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
@@ -60,7 +60,7 @@
     background-attachment: fixed !important;
     padding-top: 80px !important;
     padding-bottom: 80px !important;
-    background: url('../img/dark/mask2.jpg')no-repeat center center fixed !important;
+    background: url('../images/dark/mask2.jpg')no-repeat center center fixed !important;
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
