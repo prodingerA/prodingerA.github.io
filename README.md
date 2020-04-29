@@ -1,6 +1,3 @@
-- build status
-- downloads
-
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)
 # Portfolio with bootstrap4
 
