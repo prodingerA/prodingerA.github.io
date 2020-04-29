@@ -19,7 +19,7 @@
 ## Features
 
 - Going into more detail on code and technologies used.
-- I - I - I used <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Boostrap 4</a> for this sample.
+- I used <a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Boostrap 4</a> for this sample.
 - besides I have also googled quite a lot and looked in forums how others have done it.
 
 
@@ -30,7 +30,7 @@
 
 Reach out to me at one of the following places!
 
-- Website at <a href="http://prodingera.github.io" target="_blank">`prodingerander.com`</a>
+- Website at <a href="http://prodingera.github.io" target="_blank">`prodingerandre.com`</a>
 - LinkedIn at <a href="https://www.linkedin.com/in/prodinger-andre/" target="_blank">`Andre Prodinger`</a>
 
 ---
