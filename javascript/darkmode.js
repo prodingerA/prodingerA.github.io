@@ -45,7 +45,7 @@ function disableDarkMode() {
     $('#hamburger span').removeClass('hamburger-span-dark');
 }
 
-document.addEventListener("DOMContentLoaded", function(event) { 
+document.addEventListener("DOMContentLoaded", function (event) {
     //Implement if for checkbox
     var darkMode = document.getElementById('darkModeCheck');
     var checkDarkMode = Cookies.get('darkmode');
@@ -53,11 +53,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //checks if on rejoin the darkmode was enabled
     if (checkDarkMode) {
         darkMode.checked = true;
-         enableDarkMode();
-     }
+        enableDarkMode();
+    }
 
-    darkMode.addEventListener('click', function(){
-        if (darkMode.checked){
+    darkMode.addEventListener('click', function () {
+        if (darkMode.checked) {
             //activate darkmode 
             enableDarkMode();
             Cookies.set('darkmode', 'true', {
@@ -72,8 +72,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 path: ''
             });
         }
-        
-        document.getElementsByClassName('navbar-nav a').addEventListener('click', function(){
+
+        document.getElementsByClassName('navbar-nav a').addEventListener('click', function () {
             document.querySelector('.navbar-toggler').click();
         });
     });
