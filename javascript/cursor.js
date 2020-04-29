@@ -7,6 +7,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('open');
     });
+    //Collapse Navbar and hamburger
+    document.getElementById("navbar-home").addEventListener("click", collN);
+    function collN() {
+           var a = document.getElementsByClassName('navbar-toggler')[0];
+           a.click();
+           hamburger.classList.toggle('open');
+    }
 
     // Implement writing text with cursor
     var TxtType = function (el, toRotate, period) {
