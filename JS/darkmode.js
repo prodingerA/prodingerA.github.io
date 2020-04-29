@@ -19,6 +19,7 @@ function enableDarkMode() {
     $('#cookiealert').addClass('cookiealert-dark');
     $('.btn-primary').addClass('btn-primary-dark');
     $('#hamburger span').addClass('hamburger-span-dark');
+
 }
 
 function disableDarkMode() {
@@ -41,6 +42,7 @@ function disableDarkMode() {
     $('#skills_sectionbreak').removeClass('skills_sectionbreak-dark');
     $('#cookiealert').removeClass('cookiealert-dark');
     $('.btn-primary').removeClass('btn-primary-dark');
+    $('#hamburger span').removeClass('hamburger-span-dark');
 }
 
 $(document).ready(function () {
