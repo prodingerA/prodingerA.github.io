@@ -89,7 +89,7 @@ header,
 }
 
 #intro {
-    background: url('../IMG/light/home.jpg')no-repeat center center fixed;
+    background: url('../img/light/home.jpg')no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -104,7 +104,7 @@ header,
     background-attachment: fixed;
     padding-top: 80px;
     padding-bottom: 80px;
-    background: url('../IMG/light/about.jpg')no-repeat center center fixed;
+    background: url('../img/light/about.jpg')no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -115,7 +115,7 @@ header,
     background-attachment: fixed;
     padding-top: 80px;
     padding-bottom: 80px;
-    background: url('../IMG/light/skills.jpg')no-repeat center center fixed;
+    background: url('../img/light/skills.jpg')no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
