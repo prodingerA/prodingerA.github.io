@@ -18,6 +18,7 @@ function enableDarkMode() {
     $('#skills_sectionbreak').addClass('skills_sectionbreak-dark');
     $('#cookiealert').addClass('cookiealert-dark');
     $('.btn-primary').addClass('btn-primary-dark');
+    $('#hamburger span').addClass('hamburger-span-dark');
 }
 
 function disableDarkMode() {

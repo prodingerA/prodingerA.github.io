@@ -11,14 +11,19 @@
     <link rel="stylesheet" href="BS/css/bootstrap.min.css">
     <link rel="stylesheet" href="BS/css/mdb.min.css">
     <link rel="stylesheet" href="CSS/dark-mode.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
     <!--Navbar (mobile included)-->
-    <nav class="navbar navbar-expand-sm bg-light fixed-top navbar-light  animated fadeInDown">
+    <nav class="navbar navbar-expand-sm bg-light fixed-top navbar-light" data-aos="slide-down">
         <div class="container">
             <a class="navbar-brand black-text " href="index.html">PORTFOLIO</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="fas fa-bars fa-1x"></span>
+            <button id="nav-toggle" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <div id="hamburger">
+                <span></span>
+                <span></span>  
+                <span></span>
+               </div>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
@@ -37,7 +42,7 @@
                         <input type="checkbox" id="checkbox" />
                         <div class="slider round"></div>
                     </label>
-                    <p class="black-text pt-2 pl-2">DarkMode</p>
+                    <p class="black-text pt-2 pl-2">DARKMODE</p>
                 </div>
             </div>
         </div>
@@ -48,17 +53,17 @@
             <div class="container-fluid d-flex align-items-center justify-content-center h-100">
                 <div class="row d-flex justify-content-center text-center">
                     <div class="col-md-10 ">
-                        <h2 class="display-4 font-weight-bold white-text pt-5 mb-2 animated fadeInDown">André Prodinger
+                        <h2 class="display-4 font-weight-bold white-text pt-5 mb-2" data-aos="zoom-in">André Prodinger
                         </h2>
                     </div>
                     <div>
                         <h4>
-                            <a href="" class="typewrite white-text" data-period="2000"
+                            <a href="" class="typewrite white-text" data-aos="zoom-in" data-period="2000"
                                 data-type='[ "Hi, this is my website.", "I Love Linux Server.", "I Love to develop." ]'>
                                 <span class="wrap"></span>
                             </a>
                         </h4>
-                        <a id="contactbutton" class="btn btn-outline-white btn-rounded s-scroll animated fadeInUp"
+                        <a id="contactbutton" class="btn btn-outline-white btn-rounded s-scroll" data-aos="zoom-in"
                             href="#contact"><i class="fas fa-paper-plane mr-2"></i>CONTACT</a>
                     </div>
                 </div>
@@ -70,9 +75,9 @@
         <!-- About me -->
         <section id="summary" class="text-center my-4">
             <div class="row justify-content-center mb-4 ">
-                <h2 class="text-center font-weight-bold my-4 animated fadeInRight">SHORT SUMMARY ABOUT ME</h2>
+                <h2 class="text-center font-weight-bold my-4" data-aos="fade-down">SHORT SUMMARY ABOUT ME</h2>
                 <div class="col-md-10">
-                    <p class="text-center animated fadeInLeft" style="padding-bottom: 50px;">Hi, I am André and a more
+                    <p class="text-center" style="padding-bottom: 50px;" data-aos="fade-down">Hi, I am André and a more
                         or less experienced software developer / system administrator and much more. Currently I am
                         attending the HTL Villach for Information Technology with the main focus on network technology,
                         so I could already gain some experience in the technical area. Also privately I am very
@@ -83,8 +88,8 @@
                 </div>
                 <!--Infobox about my projects-->
                 <div class="row justify-content-center mb-5 col-md-10">
-                    <h2 id="projects" class="py-4 animated fadeInDown">infobox about GitHub Projects</h2>
-                    <div class="alert alert-info text-center col-md-10 animated fadeInUp">
+                    <h2 id="projects" class="py-4" data-aos="fade-in">infobox about GitHub Projects</h2>
+                    <div class="alert alert-info text-center col-md-10" data-aos="fade-in">
                         <p class="lead needto">portfolio website on GitHub</p>
                         <p class="needto">-> Navbar bugfix</p>
                         <p class="needto">-> Footer bugfix</p>
@@ -94,7 +99,7 @@
             </div>
             <div class="row">
                 <!-- skills-->
-                <div class="col-md-4 mb-4 animated fadeInLeft">
+                <div class="col-md-4 mb-4" data-aos="fade-in">
                     <i class="fa fa-paper-plane fa-4x"></i>
                     <h2 class="my-4">PORTFOLIO</h2>
                     <p>I have decided to build a portfolio website. If I'm going to build a website, it should be at
@@ -102,7 +107,7 @@
                         always build up a big ambition and I am really exact about details and so on. </p>
                 </div>
                 <!-- my school-->
-                <div class="col-md-4 mb-4 animated fadeInLeft">
+                <div class="col-md-4 mb-4 " data-aos="fade-up">
                     <i class="fas fa-code-branch fa-4x"></i>
                     <h2 class="my-4">CHARM/BACKEND</h2>
                     <p>pharmaziegasse/charm-backend is a management system from the beauty website Pharamaziegasse. The
@@ -110,7 +115,7 @@
                         Pythonfiles so that we can provide it to the user</p>
                 </div>
                 <!-- My network-->
-                <div class="col-md-4 mb-4 animated fadeInLeft ">
+                <div class="col-md-4 mb-4" data-aos="fade-in">
                     <i class="fas fa-network-wired fa-4x"></i>
                     <h2 class="my-4">EREBOS.XYZ</h2>
                     <p>erebos.xyz is a network in which I have been an active member for years. We are an independent
@@ -130,7 +135,7 @@
     <div class="container cont my-4">
         <section id="spacer" class="">
             <div class="row">
-                <div class="col-md-4 mb-4 animated fadeInLeft">
+                <div class="col-md-4 mb-4 " data-aos="fade-in">
                     <i class=""></i>
                     <h2 class="my-4">NETWORK TECHNOLOGY</h2>
                     <p>I have been interested in
@@ -140,7 +145,7 @@
                         The most distinctive are my Linux server abilities which I try to expand every day.</p>
                 </div>
 
-                <div class="col-md-4 mb-4 animated fadeInLeft">
+                <div class="col-md-4 mb-4 " data-aos="fade-down">
                     <i class=""></i>
                     <h2 class="my-4">VIDEO CUTTING</h2>
                     <p>I have been editing videos since I was 14 years old. I even had a youtube channel that ran a
@@ -148,27 +153,27 @@
                         again soon?</p>
                 </div>
 
-                <div class="col-md-4 mb-4 animated fadeInLeft">
+                <div class="col-md-4 mb-4 " data-aos="fade-in">
                     <i class=""></i>
                     <h2 class="my-4">LANGUAGE</h2>
                     <p>my mother tongue is german but nevertheless i can speak english as well as in written form.</p>
                 </div>
 
-                <div class="col-md-4 mb-4 animated fadeInLeft">
+                <div class="col-md-4 mb-4 " data-aos="fade-in">
                     <i class=""></i>
                     <h2 class="my-4">BOXING</h2>
                     <p>I started boxing at the end of 2019 and I have to say it was a lot of fun and I would have
                         continued if it hadn't been for this winter break. I stopped at the beginning of 2020.</p>
                 </div>
 
-                <div class="col-md-4 mb-4 animated fadeInLeft">
+                <div class="col-md-4 mb-4 " data-aos="fade-up">
                     <i class=""></i>
                     <h2 class="my-4">CYCLING</h2>
                     <p>Since I was 7 years old I have been cycling for my life. I started with about 13 downhill and I
                         am still pretty good at it, I am constantly improving.</p>
                 </div>
 
-                <div class="col-md-4 mb-4 animated fadeInLeft">
+                <div class="col-md-4 mb-4 " data-aos="fade-in">
                     <i class=""></i>
                     <h2 class="my-4">GAMING</h2>
                     <p>At that time I played secretly until 20 o'clock and now I sit in front of my PC and build my own
@@ -188,11 +193,11 @@
     <!--Contact field (with cards)-->
     <div id="contact_jump" class="container">
         <section id="contact" class="pt-4 mt-3">
-            <h2 class="font-weight-bold text-center animated fadeInDown">CONTACT</h2>
-            <h3 class="text-center">Only a few clicks ahead</h3>
+            <h2 class="font-weight-bold text-center" data-aos="fade-down">CONTACT</h2>
+            <h3 class="text-center" data-aos="fade-down">Only a few clicks ahead</h3>
             <div class="row mt-5">
                 <!--GitHub-->
-                <div class="col-sm-4  align-items-stretch animated fadeInRight">
+                <div class="col-sm-4  align-items-stretch" data-aos="fad-up">
                     <div class="card mb-3">
                         <div class="card-img-top text-center my-3"><i class="fab fa-github fa-3x blue-text"></i></div>
                         <div class="card-body text-center">
@@ -204,7 +209,7 @@
                     </div>
                 </div>
                 <!--LinkedIn-->
-                <div class="col-sm-4 align-items-stretch animated fadeInRight">
+                <div class="col-sm-4 align-items-stretch" data-aos="fade-up">
                     <div class="card mb-3">
                         <div class="card-img-top text-center my-3"><i class="fab fa-linkedin fa-3x blue-text"></i></div>
                         <div class="card-body text-center">
@@ -217,7 +222,7 @@
                     </div>
                 </div>
                 <!--Instagram-->
-                <div class="col-sm-4 align-items-stretch animated fadeInRight">
+                <div class="col-sm-4 align-items-stretch" data-aos="fade-up">
                     <div class="card mb-3">
                         <div class="card-img-top text-center my-3"><i class="fab fa-instagram fa-3x blue-text"></i>
                         </div>
@@ -265,7 +270,7 @@
                 </div>
             </div>
         </div>
-        <div class="copyright text-center"> Copyright &copy; 2020 <span>André Prodinger</span>
+        <div class="copyin text-center"> Copyin &copy; 2020 <span>André Prodinger</span>
         </div>
     </footer>
 
@@ -286,5 +291,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </html>
