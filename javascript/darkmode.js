@@ -45,30 +45,36 @@ function disableDarkMode() {
     $('#hamburger span').removeClass('hamburger-span-dark');
 }
 
-$(document).ready(function () {
-    $('#checkbox').click(function () {
-        if ($(this).is(':checked')) {
+document.addEventListener("DOMContentLoaded", function(event) { 
+    //Implement if for checkbox
+    var darkMode = document.getElementById('darkModeCheck');
+    var checkDarkMode = Cookies.get('darkmode');
+
+    //checks if on rejoin the darkmode was enabled
+    if (checkDarkMode) {
+        darkMode.checked = true;
+         enableDarkMode();
+     }
+
+    darkMode.addEventListener('click', function(){
+        if (darkMode.checked){
+            //activate darkmode 
             enableDarkMode();
             Cookies.set('darkmode', 'true', {
                 expires: 6969,
                 path: ''
             });
         } else {
+            //disable darkmode
             disableDarkMode();
             Cookies.set('darkmode', 'false', {
                 expires: -1,
                 path: ''
-            })
+            });
         }
-    });
-    var a = Cookies.get('darkmode');
-
-    if (a) {
-        $('#checkbox').prop('checked', true);
-        enableDarkMode();
-    }
-
-    $('.navbar-nav a').on('click', function () {
-        $('.navbar-toggler').click();
+        
+        document.getElementsByClassName('navbar-nav a').addEventListener('click', function(){
+            document.querySelector('.navbar-toggler').click();
+        });
     });
 });
