@@ -1,10 +1,14 @@
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", function(event) { 
+    // Implement AOS animations
     AOS.init();
     
-    $('#hamburger').click(function(){
-        $(this).toggleClass('open');
+    // Implement hamburger animation
+    var hamburger = document.getElementById('hamburger');
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('open');
     });
 
+    // Implement writing text with cursor
     var TxtType = function (el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
