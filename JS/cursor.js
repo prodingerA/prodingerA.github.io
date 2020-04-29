@@ -1,11 +1,10 @@
 $(document).ready(function () {
     AOS.init();
     
-        $('#hamburger').click(function(){
-            $(this).toggleClass('open');
-        });
-
-
+    $('#hamburger').click(function(){
+        $(this).toggleClass('open');
+    });
+    
     var TxtType = function (el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
