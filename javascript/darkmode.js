@@ -29,7 +29,6 @@ function enableDarkMode() {
     $('#cookiealert').addClass('cookiealert-dark');
     $('.btn-primary').addClass('btn-primary-dark');
     $('#hamburger span').addClass('hamburger-span-dark');
-
 }
 
 function disableDarkMode() {
@@ -55,7 +54,7 @@ function disableDarkMode() {
     $('#hamburger span').removeClass('hamburger-span-dark');
 }
 
-document.addEventListener("DOMContentLoaded", function (event) {
+document.addEventListener('DOMContentLoaded', function (event) {
     var darkMode = document.getElementById('darkModeCheck');
     var checkDarkMode = Cookies.get('darkmode');
     

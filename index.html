@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/dark-mode.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
+
 <body>
     <!--Navbar (mobile included)-->
     <nav class="navbar navbar-expand-sm bg-light fixed-top navbar-light" data-aos="slide-down">
@@ -26,18 +27,18 @@
                 </div>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav"  id="navbar-home">
+                <ul class="navbar-nav" id="navbar-home">
                     <li class="nav-item">
-                        <a class="nav-link black-text" onclick="disableNavbar()" href="#top">HOME</a>
+                        <a class="nav-link black-text" href="#top">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link black-text" onclick="disableNavbar()" href="#beginninoflife">ABOUT</a>
+                        <a class="nav-link black-text" href="#beginninoflife">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link black-text" onclick="disableNavbar()" href="#contact_jump">CONTACT</a>
+                        <a class="nav-link black-text" href="#contact_jump">CONTACT</a>
                     </li>
                 </ul>
-                <div class="theme-switch-wrapper ml-auto">
+                <div id="glitch_darkmode" class="theme-switch-wrapper ml-auto">
                     <label class="theme-switch" for="darkModeCheck">
                         <input type="checkbox" id="darkModeCheck" />
                         <div class="slider round"></div>
@@ -58,11 +59,13 @@
                     </div>
                     <div>
                         <h4>
-                            <a href="" class="typewrite white-text" data-aos="zoom-in" data-period="2000" data-type='[ "Hi, this is my website.", "I Love Linux Server.", "I Love to develop." ]'>
+                            <a href="" class="typewrite white-text" data-aos="zoom-in" data-period="2000"
+                                data-type='[ "Hi, this is my website.", "I Love Linux Server.", "I Love to develop." ]'>
                                 <span class="wrap"></span>
                             </a>
                         </h4>
-                        <a id="contactbutton" class="btn btn-outline-white btn-rounded s-scroll" data-aos="zoom-in" href="#contact"><i class="fas fa-paper-plane mr-2"></i>CONTACT</a>
+                        <a id="contactbutton" class="btn btn-outline-white btn-rounded s-scroll" data-aos="zoom-in"
+                            href="#contact"><i class="fas fa-paper-plane mr-2"></i>CONTACT</a>
                     </div>
                 </div>
             </div>
@@ -201,7 +204,8 @@
                         <div class="card-body text-center">
                             <h4 class="card-title">GitHub</h4>
                             <p class="card-text">Overview of projects i made</p>
-                            <a class="btn btn-danger btn-rounded btn-md s-scroll waves-effect waves-light" href="https://github.com/prodingerA"><i class="fas fa-paper-plane mr-2"></i>Profile</a>
+                            <a class="btn btn-danger btn-rounded btn-md s-scroll waves-effect waves-light"
+                                href="https://github.com/prodingerA"><i class="fas fa-paper-plane mr-2"></i>Profile</a>
                         </div>
                     </div>
                 </div>
@@ -212,7 +216,9 @@
                         <div class="card-body text-center">
                             <h4 class="card-title">LinkedIn</h4>
                             <p class="card-text">Curriculum vitae and skills</p>
-                            <a class="btn btn-danger btn-rounded btn-md s-scroll waves-effect waves-light" href="https://www.linkedin.com/in/prodinger-andre/"><i class="fas fa-paper-plane mr-2"></i>Profile</a>
+                            <a class="btn btn-danger btn-rounded btn-md s-scroll waves-effect waves-light"
+                                href="https://www.linkedin.com/in/prodinger-andre/"><i
+                                    class="fas fa-paper-plane mr-2"></i>Profile</a>
                         </div>
                     </div>
                 </div>
@@ -224,7 +230,8 @@
                         <div class="card-body text-center">
                             <h4 class="card-title">Instagram</h4>
                             <p class="card-text">Photos i made</p>
-                            <a class="btn btn-danger btn-rounded btn-md s-scroll waves-effect waves-light" href="#contact"><i class="fas fa-paper-plane mr-2"></i>Profile</a>
+                            <a class="btn btn-danger btn-rounded btn-md s-scroll waves-effect waves-light"
+                                href="#contact"><i class="fas fa-paper-plane mr-2"></i>Profile</a>
                         </div>
                     </div>
                 </div>
@@ -264,10 +271,32 @@
                 </div>
             </div>
         </div>
-        <div class="copyin text-center"> Copyin &copy; 2020 <span>André Prodinger</span>
+        <div class="container-fluid img-fluid pt-3" style="background-color: #1f1e1e;">
+            <div class="copyin text-center"> Copyright &copy; 2019-2020 <span>André Prodinger</span>
+            </div>
+            <div class="text-center">
+                <small class="text-muted">
+                    Stable release
+                    <span class="pl-2 pr-2">·</span>
+                    Version v1.3.1
+                    <span class="pl-2 pr-2">·</span>
+                    <a href="https://github.com/prodingerA/prodingerA.github.io" rel="noopener noreferrer"
+                        target="_blank">
+                        <i data-test="fa" class="fab fa-github pr-2"></i>
+                        View on GitHub</a>
+                    <span class="pl-2 pr-2">·</span>
+                    <a href="https://github.com/prodingerA/prodingerA.github.io/issues" rel="noopener noreferrer"
+                        target="_blank">
+                        <i data-test="fa" class="fa fa-bug pr-2"></i>
+                        Report bug
+                    </a>
+                </small>
+            </div>
+            <div class="text-center pb-3">
+                <p class="bold">Made with <i class="fas fa-keyboard white-text"></i> by me.</p>
+            </div>
         </div>
     </footer>
-
     <div id="cookiealert" class="cookiealert-container text-center mt-3 p-3" style="visibility:hidden;">
         <b>Do you like cookies?</b> <b>&#x1F36A; I use cookies to ensure you get the best experience on my website.</b>
         <a href="http://cookiesandyou.com/">Learn more</a>
@@ -278,12 +307,12 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="javascript/cookies.js"></script>
-<script src="javascript/darkmode.js"></script>
-<script src="javascript/cursor.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="javascript/cookies.js"></script>
+<script src="javascript/darkmode.js"></script>
+<script src="javascript/cursor.js"></script>
 
 </html>
