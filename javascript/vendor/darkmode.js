@@ -30,12 +30,10 @@ function enableDarkMode() {
     $('.btn-primary').addClass('btn-primary-dark');
     $('#hamburger span').addClass('hamburger-span-dark');
     document.getElementById('animatedNet').style.visibility = 'visible';
-
     Cookies.set('darkmode', 'true', {
         expires: 6969,
         path: ''
     });
-
 }
 
 function disableDarkMode() {
@@ -60,7 +58,6 @@ function disableDarkMode() {
     $('.btn-primary').removeClass('btn-primary-dark');
     $('#hamburger span').removeClass('hamburger-span-dark');
     document.getElementById('animatedNet').style.visibility = 'hidden';
-    disableDarkMode();
     Cookies.set('darkmode', 'false', {
         expires: -1,
         path: ''
@@ -84,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
             enableDarkMode();
         } else {
             //disable darkmode
+            disableDarkMode();
         }
     });
 
