@@ -129,22 +129,6 @@ footer .copyright {
     font-size: 15px;
 }
 
-/* 
-.box {
-    width: 120%;
-    height: 200px;
-    left: -10%;
-    background-color: red;
-    -webkit-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-    content: "";
-    position: absolute;
-    bottom: -100px;
-
-} */
-
-
 .box {
     width: 120%;
     left: -10%;
@@ -310,7 +294,7 @@ input:checked+.slider:before {
     transition:  0.7s ease-in-out;
 }
 
-/* Upper */
+/* Upper animation of landing page */
 .beginninoflife-upper{
     margin-top: -250px !important;
     transition:  0.7s ease-in-out;
@@ -322,15 +306,26 @@ input:checked+.slider:before {
     -ms-transform: rotate(+5deg);
     transform: rotate(+5deg);
     transition:  0.7s ease-in-out;
-    bottom: 100px;
+    bottom:
+     100px;
 }
 
+/* Media for Smartphones */
 @media only screen and (max-width: 999px)  {
 
     #animatedNet{
         visibility: hidden !important;
         height: auto !important;
+    }
 
+    .box {
+        width: 100% !important;
+        left: 0%;
+    }
+    .otherbox-upper {
+        -webkit-transform: rotate(+0deg) !important;
+        -ms-transform: rotate(+0deg) !important;
+        transform: rotate(+0deg) !important;
     }
 
     .placeholder {
