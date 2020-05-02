@@ -31,6 +31,11 @@ function enableDarkMode() {
     $('#hamburger span').addClass('hamburger-span-dark');
     document.getElementById('animatedNet').style.visibility = 'visible';
 
+    Cookies.set('darkmode', 'true', {
+        expires: 6969,
+        path: ''
+    });
+
 }
 
 function disableDarkMode() {
@@ -55,6 +60,11 @@ function disableDarkMode() {
     $('.btn-primary').removeClass('btn-primary-dark');
     $('#hamburger span').removeClass('hamburger-span-dark');
     document.getElementById('animatedNet').style.visibility = 'hidden';
+    disableDarkMode();
+    Cookies.set('darkmode', 'false', {
+        expires: -1,
+        path: ''
+    });
     
 }
 
@@ -72,32 +82,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
         if (darkMode.checked) {
             //activate darkmode 
             enableDarkMode();
-            Cookies.set('darkmode', 'true', {
-                expires: 6969,
-                path: ''
-            });
         } else {
             //disable darkmode
-            disableDarkMode();
-            Cookies.set('darkmode', 'false', {
-                expires: -1,
-                path: ''
-            });
         }
     });
-
-    var matchMobileMedia = window.matchMedia('(prefers-color-scheme: dark)');
-    toggleMobileMedia(matchMobileMedia);
-    matchMobileMedia.addListener(toggleMobileMedia);
-
-    function toggleMobileMedia(toggleMobileMedia) {
-        if (toggleMobileMedia.matches) { 
-            enableDarkMode();
-          } else {
-            disableDarkMode();
-          }
-    }
-
 
     VANTA.NET({
         el: "#animatedNet",
