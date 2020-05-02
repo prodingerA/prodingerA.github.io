@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
            a.click();
            hamburger.classList.toggle('open');
     }
-    
+
      //landing page box animation
      var lastScroll = 0;
      $(window).scroll(function() {
@@ -92,5 +92,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
-
 });
