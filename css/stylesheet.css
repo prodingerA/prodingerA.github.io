@@ -295,7 +295,6 @@ input:checked + .slider:before {
 
 #animatedNet:hover {
     cursor: pointer;
-    visibility: visible !important;
 }
 
 /* Upper animation of landing page */
@@ -312,6 +311,9 @@ input:checked + .slider:before {
     transition: 0.7s ease-in-out;
     bottom:
         100px;
+}
+.placeholder {
+    visibility: visible !important;
 }
 
 /* Media for Smartphones */
