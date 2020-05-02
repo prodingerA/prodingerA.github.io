@@ -1,3 +1,5 @@
+@media screen and (prefers-color-scheme: dark) {
+
 .box-dark::after {
     width: 120%;
     height: 200px;
@@ -122,3 +124,4 @@
 .hamburger-span-dark {
     background: white !important;
   }
+}

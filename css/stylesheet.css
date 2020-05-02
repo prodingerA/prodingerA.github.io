@@ -1,4 +1,25 @@
-
+@media screen and (prefers-color-scheme: no-preference) {
+    .navbar-light {
+        color: white !important;
+        transition: 0.7s ease-in-out;
+    }
+    
+    .bg-light {
+        background-color: white !important;
+        transition: 0.7s ease-in-out;
+    }    
+}
+@media screen and (prefers-color-scheme: no-preference) {
+    .navbar-light {
+        color: white !important;
+        transition: 0.7s ease-in-out;
+    }
+    
+    .bg-light {
+        background-color: white !important;
+        transition: 0.7s ease-in-out;
+    }    
+}
 
 * {
     margin: 0;

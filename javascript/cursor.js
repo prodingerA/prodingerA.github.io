@@ -5,8 +5,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     // Implement hamburger animation
     var hamburger = document.getElementById('hamburger');
     hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('open');
+    hamburger.classList.toggle('open');
     });
+
     //Collapse Navbar and hamburger
     document.getElementById("navbar-home").addEventListener("click", collN);
     function collN() {
@@ -14,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
            a.click();
            hamburger.classList.toggle('open');
     }
-
+ 
     // Implement writing text with cursor
     var TxtType = function (el, toRotate, period) {
         this.toRotate = toRotate;
