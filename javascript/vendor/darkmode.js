@@ -55,6 +55,7 @@ function disableDarkMode() {
     $('.btn-primary').removeClass('btn-primary-dark');
     $('#hamburger span').removeClass('hamburger-span-dark');
     document.getElementById('animatedNet').style.visibility = 'hidden';
+    
 }
 
 document.addEventListener('DOMContentLoaded', function (event) {
@@ -97,5 +98,5 @@ document.addEventListener('DOMContentLoaded', function (event) {
         points: 16.00,
         maxDistance: 23.00,
         spacing: 13.00
-      })
+      });
 });
