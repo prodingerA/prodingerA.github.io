@@ -15,6 +15,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
            a.click();
            hamburger.classList.toggle('open');
     }
+    
+     //landing page box animation
+     var lastScroll = 0;
+     $(window).scroll(function() {
+         var st = $(this).scrollTop();
+         if ($(window).scrollTop() !== 0){
+             $('.box').addClass('otherbox-upper');
+             $('#beginninoflife').addClass('beginninoflife-upper');
+          }
+          else {
+             $('.box').removeClass('otherbox-upper');
+             $('#beginninoflife').removeClass('beginninoflife-upper');
+          }
+          
+          lastScroll = st;
+      });
  
     // Implement writing text with cursor
     var TxtType = function (el, toRotate, period) {
@@ -26,6 +42,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         this.tick();
         this.isDeleting = false;
     };
+
+
 
     TxtType.prototype.tick = function () {
         var i = this.loopNum % this.toRotate.length;

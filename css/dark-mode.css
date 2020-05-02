@@ -1,17 +1,7 @@
 @media screen and (prefers-color-scheme: dark) {
 
-.box-dark::after {
-    width: 120%;
-    height: 200px;
-    left: -10%;
+.box-dark {
     background-color: #121212;
-    -webkit-transform: rotate(-5deg);
-    -ms-transform: rotate(-5deg);
-    transform: rotate(-5deg);
-    content: "";
-    position: absolute;
-    bottom: -100px;
-    transition: 0.7s ease-in-out;
 }
 
 .text-dark-dark {
