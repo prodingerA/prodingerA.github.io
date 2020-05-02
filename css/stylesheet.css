@@ -294,6 +294,10 @@ input:checked+.slider:before {
     transition:  0.7s ease-in-out;
 }
 
+#animatedNet:hover {
+    cursor: pointer;
+}
+
 /* Upper animation of landing page */
 .beginninoflife-upper{
     margin-top: -250px !important;
