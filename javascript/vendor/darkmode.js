@@ -85,6 +85,25 @@ document.addEventListener('DOMContentLoaded', function (event) {
             });
         }
     });
+
+    var matchMobileMedia = windwo.matchMedia('(prefers-color-scheme: dark)');
+    toggleMobileMedia(matchMobileMedia);
+    x.addListener(toggleMobileMedia);
+
+    function toggleMobileMedia(toggleMobileMedia) {
+        if (toggleMobileMedia.matches) { 
+            enableDarkMode();
+          } else {
+            disableDarkMode();
+          }
+    }
+
+    if (window.matchMedia("(max-width: 700px)").matches) {
+        /* The viewport is less than, or equal to, 700 pixels wide */
+      } else {
+        /* The viewport is greater than 700 pixels wide */
+      }    
+
     VANTA.NET({
         el: "#animatedNet",
         mouseControls: true,
