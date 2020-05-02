@@ -329,12 +329,14 @@ input:checked+.slider:before {
 
     #animatedNet{
         visibility: hidden !important;
+        height: auto !important;
+
     }
 
     .placeholder {
-    margin-top: 100%;
-    visibility: visible;
-    margin-top: 10%;
+    margin-top: 0%;
+    visibility: visible !important;
     }
+
     
 }
