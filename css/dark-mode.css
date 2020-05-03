@@ -1,4 +1,3 @@
-@media screen and (prefers-color-scheme: dark) {
 
 .box-dark {
     background-color: #121212;
@@ -114,6 +113,6 @@
 .hamburger-span-dark {
     background: white !important;
   }
-}
+
 
 .undercover-class{}
