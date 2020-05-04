@@ -16,20 +16,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
            hamburger.classList.toggle('open');
     }
 
-     //landing page box animation
-     var lastScroll = 0;
+     //landing page box animation 
      $(window).scroll(function() {
-         var st = $(this).scrollTop();
          if ($(window).scrollTop() !== 0){
              $('.box').addClass('otherbox-upper');
              $('#beginninoflife').addClass('beginninoflife-upper');
+             $('.navbar').removeClass('pNavbar');
           }
           else {
-             $('.box').removeClass('otherbox-upper');
-             $('#beginninoflife').removeClass('beginninoflife-upper');
+            $('.navbar').addClass('pNavbar');
+            $('.box').removeClass('otherbox-upper');
+            $('#beginninoflife').removeClass('beginninoflife-upper');
           }
-          
-          lastScroll = st;
       });
  
     // Implement writing text with cursor

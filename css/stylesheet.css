@@ -136,6 +136,19 @@ em {
     font-size: 1rem;
 }
 
+
+.pNavbar {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    transition: 0.3s ease-in-out !important;
+}
+
+.navbar {
+    transition: 0.3s ease-in-out !important;
+
+}
+
+
 .theme-switch {
     display: inline-block;
     height: 24px;
@@ -284,9 +297,8 @@ input:checked + .slider:before {
     -webkit-transform: rotate(+5deg);
     -ms-transform: rotate(+5deg);
     transform: rotate(+5deg);
-    transition: 0.7s ease-in-out;
-    bottom:
-        100px;
+    transition: 0.3s ease-in-out;
+    bottom: 100px;
 }
 .placeholder {
     visibility: visible !important;
