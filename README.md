@@ -13,7 +13,8 @@
 
 ### Clone
 
-- Clone this repo to your local machine using `https://github.com/prodingerA/prodingerA.github.io.git`
+- Clone this repo to your local machine using this command
+`git clone https://github.com/prodingerA/prodingerA.github.io.git`
 
 
 ## Features
