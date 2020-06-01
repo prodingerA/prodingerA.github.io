@@ -8,6 +8,158 @@
     scroll-behavior: smooth;
 }
 
+h1,h3,p,span,b,i,.navbar,h4 {
+    font-family: 'Lato', sans-serif;
+}
+
+
+.bouncy{
+    animation: bouncy 5s infinite linear;
+    position:relative;
+    }
+    
+    @keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+    }
+    .bouncy2{
+        animation: bouncy 6s infinite linear;
+        position:relative;
+        }
+        @keyframes bouncy {
+        0%{top:0em}
+        40%{top:0em}
+        43%{top:-0.9em}
+        46%{top:0em}
+        48%{top:-0.4em}
+        50%{top:0em}
+        100%{top:0em;}
+        }
+        .bouncy3{
+            animation: bouncy 4s infinite linear;
+            position:relative;
+            }
+            @keyframes bouncy {
+            0%{top:0em}
+            40%{top:0em}
+            43%{top:-0.9em}
+            46%{top:0em}
+            48%{top:-0.4em}
+            50%{top:0em}
+            100%{top:0em;}
+            }
+        
+button{
+    width:200px;
+    height:70px;
+    border-style: none;
+    color:white;
+    background-color: transparent;
+    font-size: 23px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    padding: 0px;
+    overflow: hidden !important;
+    transition: all .5s;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+button span{
+    position: absolute;
+    display: block;
+}
+button span:nth-child(1){
+    height: 3px;
+    width:200px;
+    top:0px;
+    left:-200px;
+    background: linear-gradient(to right, rgba(0,0,0,0), #fff);
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span1 2s linear infinite;
+    animation-delay: 1s;
+}
+
+@keyframes span1{
+    0%{
+        left:-200px
+    }
+    100%{
+        left:200px;
+    }
+}
+
+button span:nth-child(2){
+    height: 70px;
+    width: 3px;
+    top:-70px;
+    right:0px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #fff);
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    animation: span2 2s linear infinite;
+    animation-delay: 2s;
+}
+@keyframes span2{
+    0%{
+        top:-70px;
+    }
+    100%{
+        top:70px;
+    }
+}
+button span:nth-child(3){
+    height:3px;
+    width:200px;
+    right:-200px;
+    bottom: 0px;
+    background: linear-gradient(to left, rgba(0,0,0,0), #fff);
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    animation: span3 2s linear infinite;
+    animation-delay: 3s;
+}
+@keyframes span3{
+    0%{
+        right:-200px;
+    }
+    100%{
+        right: 200px;
+    }
+}
+
+button span:nth-child(4){
+    height:70px;
+    width:3px;
+    bottom:-70px;
+    left:0px;
+    background: linear-gradient(to top, rgba(0,0,0,0), #fff);
+    border-top-right-radius: 1px;
+    border-top-left-radius: 1px;
+    animation: span4 2s linear infinite;
+    animation-delay: 4s;
+}
+@keyframes span4{
+    0%{
+        bottom: -70px;
+    }
+    100%{
+        bottom:70px;
+    }
+}
+
+button:hover{
+    transition: all .5s;
+    transform: rotate(-2deg) scale(1.1);
+    box-shadow: 0px 3px 5px rgba(0,0,0,.4);
+}
 html,
 body,
 header,
@@ -328,3 +480,59 @@ input:checked + .slider:before {
         visibility: visible !important;
     }
 }
+
+.glitchiboi:hover {
+    animation: text-shadow 1.5s ease-in-out infinite;
+}
+
+.glitchiboi {
+    animation-play-state: paused;
+}
+
+@keyframes text-shadow {
+    0% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+
+    20% {  
+        transform: translateY(-1px);
+        text-shadow: 
+            0 1.125px 0 #0c2ffb, 
+            0 1.25px 0 #2cfcfd, 
+            0 -1.125px 0 #fb203b, 
+            0 -1.25px 0 #fefc4b;
+    }
+
+    40% {  
+        transform: translateY(0.5px);
+        text-shadow: 
+            0 -1.0625px 0 #0c2ffb, 
+            0 -1.125px 0 #2cfcfd, 
+            0 1.0625px 0 #fb203b, 
+            0 1.125px 0 #fefc4b;
+    }
+    
+   60% {
+        transform: translateY(-0.25px);
+        text-shadow: 
+            0 1.03125px 0 #0c2ffb, 
+            0 1.0625px 0 #2cfcfd, 
+            0 -1.03125px 0 #fb203b, 
+            0 -1.0625px 0 #fefc4b;
+    }
+
+    80% {  
+        transform: translateY(0);
+        text-shadow: 
+            0 0 0 #0c2ffb, 
+            0 0 0 #2cfcfd, 
+            0 0 0 #fb203b, 
+            0 0 0 #fefc4b;
+    }
+}
+
