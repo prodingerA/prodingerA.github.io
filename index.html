@@ -65,13 +65,14 @@
                                 <span class="wrap"></span>
                             </a>
                         </h4>
-                            <button >
-                                <a id="contactbutton" class="white-text" href="#contact"><i class="fas fa-paper-plane mr-2"></i>CONTACT</a>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
+                        <button class="buttonC">
+                            <a id="contactbutton" class="white-text" href="#contact"><i
+                                    class="fas fa-paper-plane mr-2"></i>CONTACT</a>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -168,7 +169,8 @@
                     <div class="col-md-4 mb-4 ">
                         <i class=""></i>
                         <h2 class="my-4">LANGUAGE</h2>
-                        <p>My mother tongue is german but nevertheless I can speak english as well as in written form.</p>
+                        <p>My mother tongue is german but nevertheless I can speak english as well as in written form.
+                        </p>
                     </div>
 
                     <div class="col-md-4 mb-4 ">
@@ -181,14 +183,16 @@
                     <div class="col-md-4 mb-4 ">
                         <i class=""></i>
                         <h2 class="my-4">CYCLING</h2>
-                        <p>Since I was 7 years old I have been cycling for my life. I started with about 13 downhill and I
+                        <p>Since I was 7 years old I have been cycling for my life. I started with about 13 downhill and
+                            I
                             am still pretty good at it, I am constantly improving.</p>
                     </div>
 
                     <div class="col-md-4 mb-4 ">
                         <i class=""></i>
                         <h2 class="my-4">GAMING</h2>
-                        <p>At that time I played secretly until 20 o'clock and now I sit in front of my PC and build my own
+                        <p>At that time I played secretly until 20 o'clock and now I sit in front of my PC and build my
+                            own
                             website. Nevertheless I still like to play Pubg, Minecraft, CS:GO and many other games.</p>
                     </div>
                 </div>
@@ -281,6 +285,7 @@
                 </div>
             </div>
         </div>
+        <!-- Copyright Versions GitHub BugReport -->
         <div class="container-fluid img-fluid pt-3" style="background-color: #1f1e1e;">
             <div class="copyin text-center"> Copyright &copy; 2019-2020 <span>André Prodinger</span>
             </div>
@@ -307,13 +312,26 @@
             </div>
         </div>
     </footer>
-    <div id="cookiealert" class="cookiealert-container text-center mt-3 p-3" style="visibility:hidden;">
+    <!-- CookieAlert -->
+    <div id="cookiealert" class="cookiealert-container text-center mt-3 p-3 shadow" style="visibility:hidden;" data-aos="fade-up">
         <b>Do you like cookies?</b> <b>&#x1F36A; I use cookies to ensure you get the best experience on my website.</b>
         <a href="http://cookiesandyou.com/">Learn more</a>
         <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
             I agree
         </button>
     </div>
+    <!-- DarkmodeAlert -->
+    <div id="darkmodealert" class="text-center rounded shadow-lg" style="visibility:hidden;" data-aos="fade-up">
+        <p class="lead font-weight-bold">Performence Settings</p>
+        <b class="text-muted">Do you want to have the best experience on my website? Then activate darkmode to see all features.</b>
+        <p type="button" class="btn btn-success btn-sm acceptdarkmodealert" aria-label="Close">
+            Activate Darkmode
+        </p>
+        <p type="button" class="btn btn-danger btn-sm dontacceptdarkmodealert" aria-label="Close">
+            Cancel
+        </p>
+    </div>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -326,4 +344,5 @@
 <script src="javascript/vendor/cursor.js"></script>
 <script src="javascript/utils/three.r95.min.js"></script>
 <script src="javascript/utils/vanta.net.min.js"></script>
+
 </html>

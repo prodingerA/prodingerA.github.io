@@ -34,6 +34,7 @@ function enableDarkMode() {
         expires: 6969,
         path: ''
     });
+    document.getElementById("darkModeCheck").checked = true;
 }
 
 function disableDarkMode() {
@@ -62,7 +63,7 @@ function disableDarkMode() {
         expires: -1,
         path: ''
     });
-    
+    document.getElementById("darkModeCheck").checked = false;
 }
 
 document.addEventListener('DOMContentLoaded', function (event) {
@@ -85,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         }
     });
 
+    // Animated Net in SKills section
     VANTA.NET({
         el: "#animatedNet",
         mouseControls: true,
