@@ -11,10 +11,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //Collapse Navbar and hamburger
     document.getElementById("navbar-home").addEventListener("click", collN);
     function collN() {
-        $('.navbar-nav>li>a').on('click', function(){
-            $('.navbar-collapse').collapse('hide');
-        });
-           hamburger.classList.toggle('open');
+        $('.navbar-collapse').collapse('hide');
+        hamburger.classList.toggle('open');
     }
 
      //landing page box animation 

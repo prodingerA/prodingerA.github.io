@@ -53,30 +53,27 @@ h1,h3,p,span,b,i,.navbar,h4 {
             50%{top:0em}
             100%{top:0em;}
             }
-.buttonC {
-    width:200px;
-    height:70px; 
-}        
-button{
+
+   
+      
+.buttonC{
     border-style: none;
     color:white;
     background-color: transparent;
-    font-size: 23px;
     letter-spacing: 3px;
-    font-weight: 600;
     outline: none;
     cursor: pointer;
     position: relative;
-    padding: 0px;
+    padding: 20px;
     overflow: hidden !important;
     transition: all .5s;
     box-shadow: 0px 1px 2px rgba(0,0,0,.2);
 }
-button span{
+.buttonC span{
     position: absolute;
     display: block;
 }
-button span:nth-child(1){
+.buttonC span:nth-child(1){
     height: 3px;
     width:200px;
     top:0px;
@@ -97,7 +94,7 @@ button span:nth-child(1){
     }
 }
 
-button span:nth-child(2){
+.buttonC span:nth-child(2){
     height: 70px;
     width: 3px;
     top:-70px;
@@ -116,7 +113,7 @@ button span:nth-child(2){
         top:70px;
     }
 }
-button span:nth-child(3){
+.buttonC span:nth-child(3){
     height:3px;
     width:200px;
     right:-200px;
@@ -136,7 +133,7 @@ button span:nth-child(3){
     }
 }
 
-button span:nth-child(4){
+.buttonC span:nth-child(4){
     height:70px;
     width:3px;
     bottom:-70px;
@@ -156,7 +153,7 @@ button span:nth-child(4){
     }
 }
 
-button:hover{
+.buttonC:hover{
     transition: all .5s;
     transform: rotate(-2deg) scale(1.1);
     box-shadow: 0px 3px 5px rgba(0,0,0,.4);
