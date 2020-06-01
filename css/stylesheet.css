@@ -470,6 +470,10 @@ input:checked + .slider:before {
 
 /* Media for Smartphones */
 @media only screen and (max-width: 999px) {
+    #darkmodealert {
+        width: 100%;
+        padding: 20px;
+    }
 
     #animatedNet {
         visibility: hidden !important;
