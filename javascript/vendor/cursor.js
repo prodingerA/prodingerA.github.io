@@ -11,8 +11,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     //Collapse Navbar and hamburger
     document.getElementById("navbar-home").addEventListener("click", collN);
     function collN() {
-           var a = document.getElementsByClassName('navbar-toggler')[0];
-           a.click();
+        $('.navbar-nav>li>a').on('click', function(){
+            $('.navbar-collapse').collapse('hide');
+        });
            hamburger.classList.toggle('open');
     }
 

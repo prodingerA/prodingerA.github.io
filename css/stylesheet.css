@@ -360,6 +360,7 @@ input:checked + .slider:before {
     bottom: 0;
     z-index: 10;
     width: 100%;
+
 }
 
 #darkmodealert {
@@ -549,4 +550,3 @@ input:checked + .slider:before {
             0 0 0 #fefc4b;
     }
 }
-
