@@ -473,6 +473,8 @@ input:checked + .slider:before {
     #darkmodealert {
         width: 100% !important;
         padding: 20px !important;
+        right: 0 !important;
+        bottom: 0 !important;
     }
 
     #animatedNet {
