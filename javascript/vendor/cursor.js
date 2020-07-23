@@ -17,23 +17,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
      //landing page box animation 
-     
+     elementBox = document.getElementById('rotatedBox');
+     elementDiv = document.getElementById('beginninoflife');
+
      window.addEventListener('scroll', function() {
         let scrollingw = window.pageYOffset;
         if(scrollingw > 150){
             newScroll = scrollingw / 90;
-            elementBox = document.getElementById('rotatedBox');
-            elementDiv = document.getElementById('beginninoflife');
+            if(newScroll <= 5){
             elementBox.style['transform'] ='rotate('+newScroll+'deg)';
             elementBox.style['msTransform'] ='rotate('+newScroll+'deg)';
             elementBox.style['WebkitTransform'] ='rotate('+newScroll+'deg)';
             elementBox.style.bottom ='100px';
             elementDiv.style.marginTop = '-250px';
-            elementBox.style[transition] = '2.9s ease-in-out';
+            elementBox.style[transition] = '2.9s ease-in-out';}
         }
         if(scrollingw == 0){
-            elementBox = document.getElementById('rotatedBox');
-            elementDiv = document.getElementById('beginninoflife');
             elementBox.style['transform'] = 'rotate(0deg)';
             elementBox.style['msTransform'] = 'rotate(0deg)';
             elementBox.style['WebkitTransform'] ='rotate(0deg)';
