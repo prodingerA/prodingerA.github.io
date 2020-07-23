@@ -5,6 +5,7 @@ This is my first 'public' website, I always try to keep it up to date and keep t
 
 > Tips
 
+- this is NOT a template
 - make it pretty
 - websites are really cool
 
