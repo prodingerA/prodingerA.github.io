@@ -12,7 +12,7 @@ This is my first 'public' website, I always try to keep it up to date and keep t
 
 ---
 
-### Clone
+## Clone
 
 - Clone this repo to your local machine using this command
 `git clone https://github.com/prodingerA/prodingerA.github.io.git`
