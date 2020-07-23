@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
+    elementDiv = document.getElementById('beginninoflife').style.marginTop = '250px';
     // Implement AOS animations
     AOS.init();
     
@@ -16,19 +17,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 
      //landing page box animation 
-     $(window).scroll(function() {
-         if ($(window).scrollTop() !== 0){
-             $('.box').addClass('otherbox-upper');
-             $('#beginninoflife').addClass('beginninoflife-upper');
-             $('.navbar').removeClass('pNavbar');
-          }
-          else {
-            $('.navbar').addClass('pNavbar');
-            $('.box').removeClass('otherbox-upper');
-            $('#beginninoflife').removeClass('beginninoflife-upper');
-          }
+     
+     window.addEventListener('scroll', function() {
+        let scrollingw = window.pageYOffset;
+        if(scrollingw > 150){
+            newScroll = scrollingw / 90;
+            elementBox = document.getElementById('rotatedBox');
+            elementDiv = document.getElementById('beginninoflife');
+            elementBox.style['transform'] ='rotate('+newScroll+'deg)';
+            elementBox.style['msTransform'] ='rotate('+newScroll+'deg)';
+            elementBox.style['WebkitTransform'] ='rotate('+newScroll+'deg)';
+            elementBox.style.bottom ='100px';
+            elementDiv.style.marginTop = '-250px';
+            elementBox.style[transition] = '2.9s ease-in-out';
+        }
+        if(scrollingw == 0){
+            elementBox = document.getElementById('rotatedBox');
+            elementDiv = document.getElementById('beginninoflife');
+            elementBox.style['transform'] = 'rotate(0deg)';
+            elementBox.style['msTransform'] = 'rotate(0deg)';
+            elementBox.style['WebkitTransform'] ='rotate(0deg)';
+            elementBox.style.bottom ='-100px';
+            elementDiv.style.marginTop = '250px';
+            elementDiv.style[transition] = '0.3s ease-in-out';
+        }
       });
- 
+
     // Implement writing text with cursor
     var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
