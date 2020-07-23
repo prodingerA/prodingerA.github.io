@@ -1,7 +1,7 @@
 [![Build Status](http://img.shields.io/travis/badges/badgerbadgerbadger.svg?style=flat-square)](https://travis-ci.org/badges/badgerbadgerbadger)
 # Portfolio with bootstrap4
 
-> This is my first 'public' website, I always try to keep it up to date and keep the bug count as small as possible. 
+This is my first 'public' website, I always try to keep it up to date and keep the bug count as small as possible. 
 
 > Tips
 
