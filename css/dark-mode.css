@@ -1,4 +1,6 @@
-
+* {
+    scroll-behavior: smooth !important;
+}
 .box-dark {
     background-color: #121212;
 }

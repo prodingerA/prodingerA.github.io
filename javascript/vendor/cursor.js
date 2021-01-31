@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
-    elementDiv = document.getElementById('beginninoflife').style.marginTop = '250px';
+    elementDiv = document.getElementById('beginninoflife').style.marginTop = '10px';
     // Implement AOS animations
     AOS.init();
     
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             elementBox.style['msTransform'] = 'rotate(0deg)';
             elementBox.style['WebkitTransform'] ='rotate(0deg)';
             elementBox.style.bottom ='-100px';
-            elementDiv.style.marginTop = '250px';
+            elementDiv.style.marginTop = '10px';
             elementDiv.style[transition] = '0.3s ease-in-out';
         }
       });
